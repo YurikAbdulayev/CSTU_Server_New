@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -jar target/cstu-server-1.0-SNAPSHOT.war
+web: java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005 $JAVA_OPTS -jar target/cstu-server-1.0.jar
